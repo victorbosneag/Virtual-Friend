@@ -1,0 +1,46 @@
+
+from flask import Blueprint, render_template, redirect, url_for, request, flash, abort
+
+auth = Blueprint('auth',__name__)    #maine is used for url_for()
+
+@auth.route('/signup')
+def home():      
+    return render_template('signup.html',title="Signup")
+
+@auth.route('/signup', methods= ['POST'])
+def signup_post():
+    name = request.form.get('name')
+    email = request.form.get('email')
+    password = request.form.get('password')
+    print(name,email,password)
+    #user = User.query.filter_by(email=email).first()
+    #if user:
+    #    return redirect(url_for('auth.signup'))
+
+    #new_user = User(email=email, name=name, password=generate_password_hash(password, method='sha256'))    
+    #db.session.add(new_user)
+    #db.session.commit()
+    return redirect(url_for('main.home'))
+@auth.route('/login')
+def login():
+    return render_template('login.html',title="Login")
+
+@auth.route('/login', methods= ['POST'])
+def login_post():
+    email= request.form.get('email')
+    password= request.form.get('password')
+    rem = True if request.form.get('remember') else False    
+    print(email,password)
+    #user = User.query.filter_by(email=email).first()
+    ##if not user or not check_password_hash(user.password,password):
+    #    return redirect(url_for('main.home'))
+    #login_user(user,remember=rem)   
+    return redirect(url_for('main.profile'))
+
+
+@auth.route('/logout')
+#@login_required
+def logout():
+#    logout_user()
+    return redirect(url_for('main.home'))
+

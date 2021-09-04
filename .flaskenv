@@ -1,0 +1,1 @@
+export Flask_APP=app
