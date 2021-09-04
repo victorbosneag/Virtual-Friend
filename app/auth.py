@@ -5,7 +5,7 @@ from . import db
 from flask import Blueprint, render_template, redirect, url_for, request, flash, abort
 
 
-auth = Blueprint('auth',__name__)    #maine is used for url_for()
+auth = Blueprint('auth',__name__)    
 
 @auth.route('/signup')
 def signup():      

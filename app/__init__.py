@@ -29,7 +29,7 @@ def create_app():
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)
 
-    #from .WorkoutCRUD import Workout as works_blueprint
-    #app.register_blueprint(works_blueprint)
+    from .avatar import avatar as avatar_blueprint
+    app.register_blueprint(avatar_blueprint)
 
     return app

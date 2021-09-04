@@ -12,8 +12,9 @@ class User(db.Model, UserMixin):
 
 class Avatar(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    personality = db.Column(db.String(100))
     name  = db.Column(db.String(100))    
+    personality = db.Column(db.String(100))
+    date_posted = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
     user_id= db.Column(db.Integer, db.ForeignKey('user.id'), nullable=False) 
 
 

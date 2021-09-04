@@ -1,0 +1,36 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="col-md-4 col-md-offset-4">
+  <form method="POST" action="/newavatar">
+    <h2>Add a Avatar</h2>
+
+    <div class="form-group">
+      <label for="email">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        placeholder="Enter the name of Avatar"
+      />
+    </div>
+    <div class="form-group">
+        <label for="email">Personality</label>
+        <input
+          type="text"
+          class="form-control"
+          id="personality"
+          name="personality"
+          placeholder="Enter the personality of Avatar"
+        />
+      </div>
+
+
+    <button type="submit" class="btn btn-primary">Add Avatar</button>
+  </form>
+</div>
+{% endblock %}

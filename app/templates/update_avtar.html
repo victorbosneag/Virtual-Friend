@@ -1,0 +1,42 @@
+{% extends "base.html" %} {% block head %} {{ super() }}
+<link
+  rel="stylesheet"
+  href="{{ url_for('static', filename= 'extended_beauty.css') }}"
+/>
+{% endblock %} {% block content %}
+<div class="col-md-4 col-md-offset-4">
+  <form
+    method="POST"
+    action="{{ url_for('avatar.update_avatar', avatar_id=avatar.id) }}"
+  >
+    <h2>Update Avatar</h2>
+    {% with messages = get_flashed_messages() %} {% if messages %}
+    <div class="notification is-danger">
+      {{ messages[0] }}
+    </div>
+    {% endif %} {% endwith %}
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input
+        type="text"
+        class="form-control"
+        id="name"
+        name="name"
+        aria-describedby="pushupHelp"
+        placeholder= {{avatar.name}}
+      />
+    </div>
+    <div class="form-group">
+      <label for="personality">personality</label>
+      <input
+        type="text"
+        class="form-control"
+        id="personality"
+        name="personality"
+        aria-describedby="pushupHelp"
+      />
+    </div>
+    <button type="submit" class="btn btn-primary">Update Avatar</button>
+  </form>
+</div>
+{% endblock %}
