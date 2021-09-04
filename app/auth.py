@@ -8,7 +8,7 @@ from flask import Blueprint, render_template, redirect, url_for, request, flash,
 auth = Blueprint('auth',__name__)    #maine is used for url_for()
 
 @auth.route('/signup')
-def home():      
+def signup():      
     return render_template('signup.html',title="Signup")
 
 @auth.route('/signup', methods= ['POST'])

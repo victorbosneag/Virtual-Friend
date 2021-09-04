@@ -12,6 +12,7 @@ def home():
     return render_template('home.html',title="Home")
 
 @main.route('/profile')
+@login_required
 def profile():      
     return render_template('profile.html',title="Profile",name=current_user.name)
 
