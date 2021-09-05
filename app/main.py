@@ -4,7 +4,7 @@ from .models import User
 from flask import Blueprint, render_template, redirect, url_for, request, flash, abort
 from flask_login import current_user, login_required
 
-main = Blueprint('main',__name__)    #maine is used for url_for()
+main = Blueprint('main',__name__)    
 
 @main.route('/')
 @main.route('/home')
@@ -14,6 +14,6 @@ def home():
 @main.route('/profile')
 @login_required
 def profile():      
-    return render_template('profile.html',title="Profile",name=current_user.name)
+    return render_template('profile.html',title="Profile",name=current_user.name)    
 
 
