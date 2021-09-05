@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Register from './components/Register';
 import Chat from './components/Chat';
 import Login from './components/Login'
+import Assistants from './components/Assistants';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     <Route path="/register"exact component={Register} />
     <Route path="/login"exact component={Login} />
     <Route path="/chat" exact component={Chat} />
+    <Route path="/assistants" exact component={Assistants} />
     </BrowserRouter>
     </>
   );

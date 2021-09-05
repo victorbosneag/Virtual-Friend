@@ -11,7 +11,7 @@ return (
     <Container>
     <Nav className="me-auto">
       <Nav.Link to="/" className="nav-item" ><Link className="Link" to="/">Home</Link></Nav.Link>
-      <Nav.Link className="nav-item">Assistants</Nav.Link>
+      <Nav.Link className="nav-item"><Link className="Link" to="/assistants">Assistants</Link></Nav.Link>
       <Nav.Link className="nav-item">Contact Us</Nav.Link>
     </Nav>
     </Container>

@@ -179,3 +179,35 @@
   position: relative;
   top: 10em;
 }
+.assistants-title {
+  position: relative;
+  text-align: center;
+}
+.hr {
+  position: relative;
+  width: 300px;
+  border-style: solid;
+  border-width: 1px;
+  background-color: black;
+}
+.assistants-div {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.tom {
+  position: relative;
+  height: 200px;
+  /* top: 10em; */
+  border-radius: 5000px;
+}
+.card-container {
+  position: relative;
+  bottom: 5em;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.card-body {
+  background-color: white;
+}
