@@ -22,6 +22,20 @@
         <td>{{ ava.name }}</td>
         <td>{{ ava.date_posted.strftime('%m/%d/%Y') }}</td>
         <td>{{ ava.personality }}</td>
+        <td>{{ ava.dp }}</td>
+        {% if ava.dp==1 %}
+        <td><img class="img" src="{{ url_for('static', filename= 'avatar1.jpg') }}" height="40" alt=""></td>
+        {% elif ava.dp==2 %}        
+        <td><img class="img" src="{{ url_for('static', filename= 'avatar2.jpg') }}" height="40" alt=""></td>
+        {% elif ava.dp==3 %}        
+        <td><img class="img" src="{{ url_for('static', filename= 'avatar3.jpg') }}" height="40" alt=""></td>
+        {% elif ava.dp==4 %}        
+        <td><img class="img" src="{{ url_for('static', filename= 'avatar4.jpg') }}" height="40" alt=""></td>
+        {% elif ava.dp==5 %}
+        <td><img class="img" src="{{ url_for('static', filename= 'avatar5.jpg') }}" height="40" alt=""></td>        
+        {% else %}
+        <td><img class="img" src="{{ url_for('static', filename= 'avatar6.jpg') }}" height="40" alt=""></td>
+        {%endif%}
         <td>
             <a
               href="{{ url_for('avatar.update_avatar', avatar_id=ava.id) }}"

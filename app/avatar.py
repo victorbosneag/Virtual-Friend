@@ -18,10 +18,11 @@ def newavatar():
 def newavatar_post():
     name=request.form.get('name')
     personality=request.form.get('personality')
-    print(name,personality)
-    avatar= Avatar(name=name,personality=personality, author=current_user)   
+    dp=request.form.get('dp')
+    print(name,personality,dp)
+    avatar= Avatar(name=name,personality=personality, dp=dp, author=current_user)   
     db.session.commit()
-    return redirect(url_for('avatar.newavatar'))
+    return redirect(url_for('avatar.allavatars'))
 
 
 @avatar.route('/allavatars')
@@ -39,12 +40,13 @@ def update_avatar(avatar_id):
     if request.method == "POST":
         avatar.name = request.form['name']
         avatar.personality = request.form['personality']
+        avatar.dp = request.form['dp']
         db.session.commit()
         return redirect(url_for('avatar.allavatars'))
 
     return render_template('update_avtar.html', avatar=avatar)
 
-@avatar.route("/workout/<int:avatar_id>/delete", methods=['GET', 'POST'])
+@avatar.route("/avatar/<int:avatar_id>/delete", methods=['GET', 'POST'])
 @login_required
 def delete_avatar(avatar_id):
     avatar = Avatar.query.get_or_404(avatar_id)
