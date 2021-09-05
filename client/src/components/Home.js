@@ -1,20 +1,25 @@
 import NavBar from "./Nav";
 import logo from '../assist (4).png'
-import { Button, Card, Col, Container, Row } from "react-bootstrap";
+import { Button, Card, Col, Container, Row, Form } from "react-bootstrap";
+import { Link } from "react-router-dom";
 // import Grid from '@material-ui/core/Grid';
 // import { SmoothProvider } from 'react-smooth-scrolling'
 
 function Home() {
     return(
     <div className="Body">
+        <section className="sec">
         <NavBar />
         <div className="centered">
         <img src={logo}></img>
         </div>
         <div className="btn-wrapper">
+            <Link  to='/register'>
         <Button type="button" className="front-reg-btn " variant="primary">Register</Button>
+        </Link>
         </div>
-        <section className="card-mid-page">
+        </section>
+        <section className="card-mid-page sec">
             <h1 className="why-use-title">Why Use Assist?</h1>
             <Container className="Container">
         <Row>
@@ -37,7 +42,6 @@ to. With its highly trained AI. </Card.Body>
         </Row>
         </Container>
         </section>
-        
     </div>
     )
 }
