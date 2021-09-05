@@ -119,13 +119,63 @@
 }
 .form-container {
   position: relative;
-  height: 600px;
-  width: 600px;
+  height: 700px;
+  width: 700px;
   top: 6em;
   background-color: rgb(255, 255, 255);
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 20px;
+
 }
 .form-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.logo-register {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  bottom: 10em;
+}
+.log-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.register-form {
+  position: relative;
+  display: inline-block;
+  bottom: 5em;
+}
+.input-username {
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+}
+.input-password {
+  position: relative;
+  padding: 5px;
+  border-radius: 5px;
+}
+.label-username {
+  position: relative;
+  font-size: 1.5rem;
+  left: 5em;
+  /* bottom: 20px; */
+  /* padding: 5px; */
+}
+.label-password {
+  position: relative;
+  font-size: 1.5rem;
+  left: 5em;
+  /* top: 10px; */
+  /* padding: 5px; */
+}
+.form {
+  position: relative;
+  top: 10em;
 }

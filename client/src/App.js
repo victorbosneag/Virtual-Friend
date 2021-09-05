@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Link } from "react-router-dom";
 import Home from './components/Home';
 import Register from './components/Register';
 import Chat from './components/Chat';
+import Login from './components/Login'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
     <BrowserRouter>
     <Route path="/" exact component={Home} />
     <Route path="/register"exact component={Register} />
+    <Route path="/login"exact component={Login} />
     <Route path="/chat" exact component={Chat} />
     </BrowserRouter>
     </>

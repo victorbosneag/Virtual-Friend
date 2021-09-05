@@ -1,5 +1,5 @@
 import NavBar from "./Nav";
-import logo from '../assist (4).png'
+import logo from '../blue-logo.png'
 import { Button, Card, Col, Container, Row, Form } from "react-bootstrap";
 import { Link } from "react-router-dom";
 // import Grid from '@material-ui/core/Grid';
