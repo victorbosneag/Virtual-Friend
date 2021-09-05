@@ -8,6 +8,9 @@
   overflow-x: hidden;
   background-color: #00E0FF;
   height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-snap-align: start;
 }
 
 .navbar-container {
@@ -38,8 +41,10 @@
 }
 .front-reg-btn {
   position: relative;
-  
   text-align: center;
+  height: 50px;
+  width: 100px;
+  padding: 10em;
 }
 .btn-wrapper {
   /* position: relative; */
@@ -47,4 +52,54 @@
   align-items: center;
   justify-content: center; 
   
+}
+.card-mid-page {
+  position: relative;
+  top: 17em;
+  background-color: white;
+  height: 100vh;
+  /* scroll-snap-align: end; */
+}
+.why-use-title {
+  position: relative;
+  top: 2em;
+  font-size: 3rem;
+  text-align: center;
+}
+.card {
+  position: relative;
+  top: 10em;
+  height: 300px;
+  width: 300px;
+ 
+  box-shadow: 0 20px 50px rgb(20, 97, 240);
+  
+}
+
+.card-head {
+  text-align: center;
+  
+}
+.card-body {
+  font-size: 2rem;
+}
+.card-2 {
+  position: relative;
+  top: 10em;
+  height: 300px;
+  
+  width: 300px;
+  box-shadow: 0 20px 50px #B589D6;
+}
+.card-3 {
+  position: relative;
+  top: 10em;
+  
+  height: 300px;
+  width: 300px;
+  box-shadow: 0 20px 50px #FFA800;
+}
+.Container {
+  position: relative;
+  top: 10em;
 }
