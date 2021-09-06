@@ -22,19 +22,19 @@ function Home() {
         <section className="card-mid-page sec">
             <h1 className="why-use-title">Why Use Assist?</h1>
             <Container className="Container">
-        <Row>
-       <Col><Card className="card">
+        <Row className="row">
+       <Col className="col"><Card className="card">
             <Card.Header className="card-head">Chat 24/7</Card.Header>
             <Card.Body className="card-body">Assist will chat any time, day or night! </Card.Body>
         </Card></Col>
        
-        <Col><Card className="card-2">
+        <Col className="col"><Card className="card-2">
             <Card.Header className="card-head">Instant Speeds</Card.Header>
             <Card.Body className="card-body">Assist will answer 
 in a instant to help 
 with your needs. </Card.Body>
         </Card></Col>
-        <Col><Card className="card-3">
+        <Col className="col"><Card className="card-3">
             <Card.Header className="card-head">Just Need To Talk</Card.Header>
             <Card.Body className="card-body">Assist can do that
 to. With its highly trained AI. </Card.Body>

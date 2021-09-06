@@ -228,3 +228,402 @@
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (max-width: 1210px) {
+  .nav-item {
+    font-size: 2rem;
+    margin: 5px 70px;
+    color: black;
+  }
+  .navbar {
+    padding: 20px;
+  }
+  .card-mid-page {
+    position: relative;
+    top: 17em;
+    background-color: white;
+    height: 100vh;
+    /* scroll-snap-align: end; */
+  }
+  .why-use-title {
+    position: relative;
+    top: 2em;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    width: 250px;
+   
+    box-shadow: 0 20px 50px rgb(20, 97, 240);
+    
+  }
+  
+  .card-head {
+    text-align: center;
+    
+  }
+  .card-body {
+    font-size: 2rem;
+  }
+  .card-2 {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    
+    width: 250px;
+    box-shadow: 0 20px 50px #B589D6;
+  }
+  .card-3 {
+    position: relative;
+    top: 5em;
+    
+    height: 300px;
+    width: 250px;
+    box-shadow: 0 20px 50px #FFA800;
+  }
+}
+/* second media screen */
+@media screen and (max-width: 990px) {
+  .nav-item {
+    font-size: 1rem;
+    margin: 5px 30px;
+    color: black;
+  }
+  .navbar {
+    padding: 20px;
+  }
+  .card-mid-page {
+    position: relative;
+    top: 17em;
+    background-color: white;
+    height: 100vh;
+    /* scroll-snap-align: end; */
+  }
+  .why-use-title {
+    position: relative;
+    top: 2em;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    width: 150px;
+   
+    box-shadow: 0 20px 50px rgb(20, 97, 240);
+    
+  }
+  
+  .card-head {
+    text-align: center;
+    
+  }
+  .card-body {
+    font-size: 2rem;
+  }
+  .card-2 {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    
+    width: 150px;
+    box-shadow: 0 20px 50px #B589D6;
+  }
+  .card-3 {
+    position: relative;
+    top: 5em;
+    
+    height: 300px;
+    width: 150px;
+    box-shadow: 0 20px 50px #FFA800;
+  }
+  .logo {
+    height: 100px;
+    width: 100px;
+}
+.front-reg-btn {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  width: 80px;
+  font-size: 1rem;
+  /* padding: 2em; */
+}
+.card-body {
+  font-size: 1.5rem;
+}
+.why-use-title {
+  position: relative;
+  top: 2em;
+  font-size: 2rem;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 990px) {
+  .nav-item {
+    font-size: 1rem;
+    margin: 5px 20px;
+    color: black;
+  }
+  .navbar {
+    padding: 20px;
+  }
+  .card-mid-page {
+    position: relative;
+    top: 17em;
+    background-color: white;
+    height: 100vh;
+    /* scroll-snap-align: end; */
+  }
+  .why-use-title {
+    position: relative;
+    top: 2em;
+    font-size: 3rem;
+    text-align: center;
+  }
+  .card {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    width: 150px;
+   
+    box-shadow: 0 20px 50px rgb(20, 97, 240);
+    
+  }
+  
+  .card-head {
+    text-align: center;
+    
+  }
+  .card-body {
+    font-size: 2rem;
+  }
+  .card-2 {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    
+    width: 150px;
+    box-shadow: 0 20px 50px #B589D6;
+  }
+  .card-3 {
+    position: relative;
+    top: 5em;
+    
+    height: 300px;
+    width: 150px;
+    box-shadow: 0 20px 50px #FFA800;
+  }
+  .logo {
+    height: 100px;
+    width: 100px;
+}
+.front-reg-btn {
+  position: relative;
+  text-align: center;
+  height: 50px;
+  width: 80px;
+  /* font-size: .5rem; */
+  /* padding: 2em; */
+}
+.card-body {
+  font-size: 1.5rem;
+}
+.why-use-title {
+  position: relative;
+  top: 2em;
+  font-size: 2rem;
+  text-align: center;
+}
+}
+
+@media screen and (max-width: 990px) {
+  
+  .card-mid-page {
+    position: relative;
+    top: 17em;
+    background-color: white;
+    height: 100vh;
+    /* scroll-snap-align: end; */
+  }
+  .why-use-title {
+    position: relative;
+    top: 2em;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .card {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    width: 140px;
+   
+    box-shadow: 0 20px 50px rgb(20, 97, 240);
+    
+  }
+  
+  .card-head {
+    text-align: center;
+    
+  }
+  .card-body {
+    font-size: 2rem;
+  }
+  .card-2 {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    right: 10px;
+    width: 140px;
+    box-shadow: 0 20px 50px #B589D6;
+  }
+  .card-3 {
+    position: relative;
+    top: 5em;
+    /* bottom: 5em; */
+    right: 20px;
+    height: 300px;
+    width: 135px;
+    box-shadow: 0 20px 50px #FFA800;
+  }
+.card-body {
+  font-size: 1rem;
+}
+.why-use-title {
+  position: relative;
+  top: 2em;
+  font-size: 2rem;
+  text-align: center;
+}
+}
+@media screen and (max-width: 490px) {
+  
+  .card-mid-page {
+    position: relative;
+    top: 17em;
+    background-color: white;
+    height: 100vh;
+    /* scroll-snap-align: end; */
+  }
+  .why-use-title {
+    position: relative;
+    top: 2em;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .card {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    width: 135px;
+   
+    box-shadow: 0 20px 50px rgb(20, 97, 240);
+    
+  }
+  
+  .card-head {
+    text-align: center;
+    
+  }
+  .card-body {
+    font-size: 2rem;
+  }
+  .card-2 {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    /* right: 10px; */
+    width: 135px;
+    box-shadow: 0 20px 50px #B589D6;
+  }
+  .card-3 {
+    position: relative;
+    top: 5em;
+    /* bottom: 5em; */
+    /* right: 20px; */
+    height: 300px;
+    width: 135px;
+    box-shadow: 0 20px 50px #FFA800;
+  }
+.card-body {
+  font-size: 1rem;
+}
+.why-use-title {
+  position: relative;
+  top: 2em;
+  font-size: 2rem;
+  text-align: center;
+}
+}
+@media screen and (max-width: 474px) {
+  
+  .card-mid-page {
+    position: relative;
+    top: 17em;
+    background-color: white;
+    height: 100vh;
+    /* scroll-snap-align: end; */
+  }
+  .why-use-title {
+    position: relative;
+    top: 2em;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .card {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    width: 135px;
+   
+    box-shadow: 0 20px 50px rgb(20, 97, 240);
+    
+  }
+  
+  .card-head {
+    text-align: center;
+    
+  }
+  .card-body {
+    font-size: 2rem;
+  }
+  .card-2 {
+    position: relative;
+    top: 5em;
+    height: 300px;
+    /* right: 10px; */
+    width: 135px;
+    box-shadow: 0 20px 50px #B589D6;
+  }
+  .card-3 {
+    position: relative;
+    top: 5em;
+    /* bottom: 5em; */
+    /* right: 20px; */
+    height: 300px;
+    width: 135px;
+    box-shadow: 0 20px 50px #FFA800;
+  }
+.card-body {
+  font-size: 1rem;
+}
+.why-use-title {
+  position: relative;
+  top: 2em;
+  font-size: 2rem;
+  text-align: center;
+}
+.nav-item {
+  font-size: 1rem;
+  margin: 5px 10px;
+  color: black;
+}
+.navbar {
+  padding: 20px;
+}
+}
