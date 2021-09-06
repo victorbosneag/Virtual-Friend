@@ -15,8 +15,14 @@ function Chat() {
             </div>
             <div className="chat-div-wrapper">
             <div className="chat-div">
-
             </div>
+            <form className="form-chat">
+                <label>Username: </label>
+                <input type="text"></input>
+                <label>message: </label>
+                <input></input>
+                <button className="btn-primary">send</button>
+            </form>
             </div>
         </div>
     )

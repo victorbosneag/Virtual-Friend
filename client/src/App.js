@@ -6,6 +6,7 @@ import Register from './components/Register';
 import Chat from './components/Chat';
 import Login from './components/Login'
 import Assistants from './components/Assistants';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
     <Route path="/login"exact component={Login} />
     <Route path="/chat" exact component={Chat} />
     <Route path="/assistants" exact component={Assistants} />
+    <Route path="/contact" exact component={Contact} />
     </BrowserRouter>
     </>
   );

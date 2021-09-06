@@ -12,7 +12,7 @@ return (
     <Nav className="me-auto">
       <Nav.Link to="/" className="nav-item" ><Link className="Link" to="/">Home</Link></Nav.Link>
       <Nav.Link className="nav-item"><Link className="Link" to="/assistants">Assistants</Link></Nav.Link>
-      <Nav.Link className="nav-item">Contact Us</Nav.Link>
+      <Nav.Link className="nav-item"><Link className="Link" to="/login">Login</Link></Nav.Link>
     </Nav>
     </Container>
   </Navbar>

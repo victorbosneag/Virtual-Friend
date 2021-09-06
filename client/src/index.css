@@ -12,7 +12,15 @@
   overflow-y: scroll;
   scroll-snap-align: start;
 }
-
+.form-chat {
+  position: relative;
+  left: 10em;
+  display:block;
+}
+.email {
+  position: relative;
+  
+}
 .navbar-container {
   display: flex;
   align-items: center;
@@ -627,3 +635,4 @@
   padding: 20px;
 }
 }
+
