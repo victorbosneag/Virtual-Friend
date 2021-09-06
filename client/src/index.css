@@ -211,3 +211,20 @@
 .card-body {
   background-color: white;
 }
+.img-div {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+.chat-div {
+  position: relative;
+  bottom: 5em;
+  height: 500px;
+  width: 600px;
+  background-color: white; 
+}
+.chat-div-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
